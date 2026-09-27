@@ -32,7 +32,7 @@ $(function () {
         {
             "product": "Product A",
             "quantity": "124",
-            "revenue": "$12,400"
+            "revenue": "$12123,400"
         },
         {
             "product": "Product B",
@@ -99,10 +99,17 @@ $(function () {
     // Do not modify the JS objects above. You will write your code below.
     // *********************************************************************
     
-    //removing text from username
-    $("#username").empty();
-    
-       
+    // remove the text from username 
+    $('#username').text('');
+    //removing text from revenue amount
+    $('.revenue-amt').text('');
+    //removing text from number of customers
+    $('#customer-num').text('');
+    //removing text from number of orders
+    $('#orders-amt').text('');
+    //removing text from number of issues
+    $('#issues-amt').text('');
 
+    //remove text displaying revenue amounts in Overview section
 
-    });
+});
