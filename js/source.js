@@ -83,7 +83,7 @@ $(function () {
     ];
 
     const tasks = [
-       {
+        {
             "messsage": "Review orders"
         },
         {
@@ -100,16 +100,30 @@ $(function () {
     // *********************************************************************
     
     // remove the text from username 
-    $('#username').text('');
-    //removing text from revenue amount
-    $('.revenue-amt').text('');
+    $('#username').remove();
+    //removing text from revenue amount using 
+    $('.revenue-amt').remove();
     //removing text from number of customers
-    $('#customer-num').text('');
+    $('#customer-num').remove();
     //removing text from number of orders
-    $('#orders-amt').text('');
+    $('#orders-amt').remove();
     //removing text from number of issues
-    $('#issues-amt').text('');
+    $('#issues-amt').remove();
+    
+    //removing all rows in Sales Summary with tbody tag
+    $('#salesTableBody tr').remove()
+    //removing all list items in Recent Activity list
+    $('#activity-list li').remove()
+    //removing all rows within tbody in recent customers section
+    $('#customerTableBody tr').remove()
 
-    //remove text displaying revenue amounts in Overview section
+    //Remove all list items within system status section
+    $('#system-status-list li').remove()
 
+    //remove all list items within ol tag in notifications
+    $('#notifications-list li').remove()
+    //remove notifications counter
+    $('#notification-num').remove()
+    //remove all list items from tasks section
+    $('#tasks-list li').remove()
 });
