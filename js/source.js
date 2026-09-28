@@ -249,14 +249,19 @@ $(function () {
         }
     });
 
-    //
-    $('accordion').accordion({
+    //changing accordion to jQuery UI accordion
+    $('#accordion').accordion({
         collapsible: true,
         heightStyle: "content"
 
     }
     );
+    //adding jQuery event listener to newCustomer button
+    $('#newCustomerButton').click(function() {
+        $('#customerDialog').dialog('open');
+    });
 
-
+    //convert customerDate to jquery datepicker
+    $('#customerDate').datepicker();
 });
 
